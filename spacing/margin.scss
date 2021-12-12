@@ -1,0 +1,11 @@
+/*
+  MARGIN
+*/
+
+@include associate("m", "margin", $spacings);
+@include associate("mx", ("margin-left", "margin-right"), $spacings);
+@include associate("ml", "margin-left", $spacings);
+@include associate("mr", "margin-right", $spacings);
+@include associate("my", ("margin-top", "margin-bottom"), $spacings);
+@include associate("mt", "margin-top", $spacings);
+@include associate("mb", "margin-bottom", $spacings);

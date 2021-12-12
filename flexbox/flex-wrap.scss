@@ -1,0 +1,9 @@
+/*
+  FLEX WRAP
+*/
+
+@each $flexWrap in $flexWraps {
+  .flex-#{$flexWrap} {
+    flex-wrap: $flexWrap;
+  }
+}

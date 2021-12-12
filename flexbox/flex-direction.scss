@@ -1,0 +1,9 @@
+/*
+  FLEX DIRECTION
+*/
+
+@each $flexDirection in $flexDirections {
+  .flex-#{$flexDirection} {
+    flex-direction: $flexDirection;
+  }
+}

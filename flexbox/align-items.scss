@@ -1,0 +1,9 @@
+/*
+  ALIGN ITEMS
+*/
+
+@each $name, $value in $alignItems {
+  .align-items-#{$name} {
+    align-items: $value;
+  }
+}

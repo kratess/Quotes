@@ -1,0 +1,11 @@
+/*
+  PADDING
+*/
+
+@include associate("p", "padding", $spacings);
+@include associate("px", ("padding-left", "padding-right"), $spacings);
+@include associate("pl", "padding-left", $spacings);
+@include associate("pr", "padding-right", $spacings);
+@include associate("py", ("padding-top", "padding-bottom"), $spacings);
+@include associate("pt", "padding-top", $spacings);
+@include associate("pb", "padding-bottom", $spacings);

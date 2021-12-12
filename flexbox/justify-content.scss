@@ -1,0 +1,9 @@
+/*
+  JUSTIFY CONTENT
+*/
+
+@each $name, $value in $justifyContents {
+  .justify-content-#{$name} {
+    justify-content: $value;
+  }
+}
