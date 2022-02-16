@@ -1,0 +1,70 @@
+/*
+  CONTAINER
+*/
+
+//@include associate("container", "max-width", $container);
+
+@mixin min($bp, $max: "null", $device: "screen") {
+  @if $max == "null" {
+    @media only #{$device} and (min-width: #{$bp}) {
+      @content;
+    }
+  } @else {
+    @media only #{$device} and (min-width: #{$bp}) and (max-width: #{$max}) {
+      @content;
+    }
+  }
+}
+
+@function bp($bp) {
+  @return map-get($breakpoints, $bp);
+}
+
+$container-sizes: (
+  sm: map-get($breakpoints, sm) - 40px,
+  md: map-get($breakpoints, md) - 40px,
+  lg: map-get($breakpoints, lg) - 40px,
+  xl: map-get($breakpoints, xl) - 40px
+);
+
+%container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@each $bp, $container-size in $container-sizes {
+  .container-#{$bp} {
+    @extend %container;
+  }
+}
+
+.container {
+  @extend %container;
+}
+
+@each $bp, $container-size in $container-sizes {
+  @media (min-width: #{bp($bp)}) {
+    .container, .container-#{$bp} {
+      max-width: map-get($container-sizes, $bp);
+    }
+  }
+}
+
+@each $bp, $container-size in $container-sizes {
+  $i: index($container-sizes, $bp $container-size);
+
+  @each $bp2, $container-size in $container-sizes {
+    $ii: index($container-sizes, $bp2 $container-size);
+
+    @if $ii > $i {
+      .container-#{$bp} {
+        @extend .container-#{$bp2}
+      }
+    }
+  }
+}
+
+
+
+
+
