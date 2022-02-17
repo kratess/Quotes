@@ -1427,6 +1427,10 @@
 /*
   TEXT DEFAULT
 */
+h2, h1 {
+  margin: 0;
+}
+
 h1 {
   font-size: 2.75rem;
 }
@@ -1504,6 +1508,22 @@ h2 {
 /*
   LETTER SPACING
 */
+.spacing--0\.05 {
+  font-weight: -0.05em;
+}
+
+.spacing--0\.025 {
+  font-weight: -0.025em;
+}
+
+.spacing-0\.025 {
+  font-weight: 0.025em;
+}
+
+.spacing-0\.05 {
+  font-weight: 0.05em;
+}
+
 .spacing-0\.25 {
   font-weight: 0.25px;
 }
@@ -1543,8 +1563,16 @@ h2 {
   line-height: 1;
 }
 
+.line-height-1\.25 {
+  line-height: 1.25;
+}
+
 .line-height-1\.5 {
   line-height: 1.5;
+}
+
+.line-height-1\.75 {
+  line-height: 1.75;
 }
 
 .line-height-2 {
