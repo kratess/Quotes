@@ -2,5 +2,5 @@
   SPACE X - Y
 */
 
-@include associate("space-x", "margin-left", $spacesXYs);
-@include associate("space-y", "margin-top", $spacesXYs);
+@include associate2("space-x", "> :not([hidden]) ~ :not([hidden])", "margin-left", $spacesXYs);
+@include associate2("space-y", "> :not([hidden]) ~ :not([hidden])", "margin-top", $spacesXYs);

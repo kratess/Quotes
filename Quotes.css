@@ -877,123 +877,123 @@
 /*
   SPACE X - Y
 */
-.space-x-0 {
+.space-x-0 > :not([hidden]) ~ :not([hidden]) {
   margin-left: 0px;
 }
 
-.space-x-0\.5 {
+.space-x-0\.5 > :not([hidden]) ~ :not([hidden]) {
   margin-left: 0.5px;
 }
 
-.space-x-1 {
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
   margin-left: 1px;
 }
 
-.space-x-1\.5 {
+.space-x-1\.5 > :not([hidden]) ~ :not([hidden]) {
   margin-left: 15px;
 }
 
-.space-x-2 {
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
   margin-left: 2px;
 }
 
-.space-x-4 {
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
   margin-left: 4px;
 }
 
-.space-x-8 {
+.space-x-8 > :not([hidden]) ~ :not([hidden]) {
   margin-left: 8px;
 }
 
-.space-x-12 {
+.space-x-12 > :not([hidden]) ~ :not([hidden]) {
   margin-left: 12px;
 }
 
-.space-x-16 {
+.space-x-16 > :not([hidden]) ~ :not([hidden]) {
   margin-left: 16px;
 }
 
-.space-x-20 {
+.space-x-20 > :not([hidden]) ~ :not([hidden]) {
   margin-left: 20px;
 }
 
-.space-x-24 {
+.space-x-24 > :not([hidden]) ~ :not([hidden]) {
   margin-left: 24px;
 }
 
-.space-x-28 {
+.space-x-28 > :not([hidden]) ~ :not([hidden]) {
   margin-left: 28px;
 }
 
-.space-x-32 {
+.space-x-32 > :not([hidden]) ~ :not([hidden]) {
   margin-left: 32px;
 }
 
-.space-x-48 {
+.space-x-48 > :not([hidden]) ~ :not([hidden]) {
   margin-left: 48px;
 }
 
-.space-x-64 {
+.space-x-64 > :not([hidden]) ~ :not([hidden]) {
   margin-left: 64px;
 }
 
-.space-y-0 {
+.space-y-0 > :not([hidden]) ~ :not([hidden]) {
   margin-top: 0px;
 }
 
-.space-y-0\.5 {
+.space-y-0\.5 > :not([hidden]) ~ :not([hidden]) {
   margin-top: 0.5px;
 }
 
-.space-y-1 {
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
   margin-top: 1px;
 }
 
-.space-y-1\.5 {
+.space-y-1\.5 > :not([hidden]) ~ :not([hidden]) {
   margin-top: 15px;
 }
 
-.space-y-2 {
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
   margin-top: 2px;
 }
 
-.space-y-4 {
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
   margin-top: 4px;
 }
 
-.space-y-8 {
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
   margin-top: 8px;
 }
 
-.space-y-12 {
+.space-y-12 > :not([hidden]) ~ :not([hidden]) {
   margin-top: 12px;
 }
 
-.space-y-16 {
+.space-y-16 > :not([hidden]) ~ :not([hidden]) {
   margin-top: 16px;
 }
 
-.space-y-20 {
+.space-y-20 > :not([hidden]) ~ :not([hidden]) {
   margin-top: 20px;
 }
 
-.space-y-24 {
+.space-y-24 > :not([hidden]) ~ :not([hidden]) {
   margin-top: 24px;
 }
 
-.space-y-28 {
+.space-y-28 > :not([hidden]) ~ :not([hidden]) {
   margin-top: 28px;
 }
 
-.space-y-32 {
+.space-y-32 > :not([hidden]) ~ :not([hidden]) {
   margin-top: 32px;
 }
 
-.space-y-48 {
+.space-y-48 > :not([hidden]) ~ :not([hidden]) {
   margin-top: 48px;
 }
 
-.space-y-64 {
+.space-y-64 > :not([hidden]) ~ :not([hidden]) {
   margin-top: 64px;
 }
 
@@ -1059,6 +1059,21 @@
 
 .d-inline-table {
   display: inline-table;
+}
+
+/*
+  FLOATS
+*/
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-none {
+  float: none;
 }
 
 /*
@@ -1425,10 +1440,22 @@
 
 /*---- TYPOGRAPHY ----*/
 /*
+  COLORS
+*/
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+/*
   TEXT DEFAULT
 */
-h2, h1 {
+h6, h5, h4, h3, h2, h1 {
   margin: 0;
+  font-weight: inherit;
 }
 
 h1 {
@@ -1437,6 +1464,11 @@ h1 {
 
 h2 {
   font-size: 1.375rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 /*
@@ -1509,51 +1541,55 @@ h2 {
   LETTER SPACING
 */
 .spacing--0\.05 {
-  font-weight: -0.05em;
+  letter-spacing: -0.05em;
 }
 
 .spacing--0\.025 {
-  font-weight: -0.025em;
+  letter-spacing: -0.025em;
+}
+
+.spacing-0 {
+  letter-spacing: 0em;
 }
 
 .spacing-0\.025 {
-  font-weight: 0.025em;
+  letter-spacing: 0.025em;
 }
 
 .spacing-0\.05 {
-  font-weight: 0.05em;
+  letter-spacing: 0.05em;
 }
 
 .spacing-0\.25 {
-  font-weight: 0.25px;
+  letter-spacing: 0.25px;
 }
 
 .spacing-0\.50 {
-  font-weight: 0.5px;
+  letter-spacing: 0.5px;
 }
 
 .spacing-0\.75 {
-  font-weight: 0.75px;
+  letter-spacing: 0.75px;
 }
 
 .spacing-1 {
-  font-weight: 1px;
+  letter-spacing: 1px;
 }
 
 .spacing-2 {
-  font-weight: 2px;
+  letter-spacing: 2px;
 }
 
 .spacing-3 {
-  font-weight: 3px;
+  letter-spacing: 3px;
 }
 
 .spacing-4 {
-  font-weight: 4px;
+  letter-spacing: 4px;
 }
 
 .spacing-5 {
-  font-weight: 5px;
+  letter-spacing: 5px;
 }
 
 /*

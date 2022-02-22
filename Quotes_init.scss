@@ -41,6 +41,36 @@ $breakpoints: (
 //	}
 }
 
+@mixin associate2($class, $group, $property, $selectors) {
+	@if $class != "" {
+		$class: $class + "-"
+	}
+
+	@each $name, $value in $selectors {
+		.#{$class}#{$name}#{$group} {
+
+			@each $prop in $property {
+				#{$prop}: $value;
+			}
+
+		}
+	}
+	
+//	@each $breakpoint, $min-width in $breakpoints {
+//		@media (min-width: $min-width) {
+//			@each $name, $value in $selectors {
+//				.#{$breakpoint}\:#{$class}-#{$name} {
+
+//					@each $prop in $property {
+//						#{$prop}: $value;
+//					}
+
+//				}
+//			}
+//		}
+//	}
+}
+
 /*---- FLEXBOX ----*/
 
 $flexDirections: row, row-reverse, column, column-reverse;
@@ -120,6 +150,12 @@ $displays: (
 	inline-table: inline-table,
 );
 
+$floats: (
+	left: left,
+	right: right,
+	none: none,
+);
+
 $positions: (
 	static: static,
 	relative: relative,
@@ -175,6 +211,11 @@ $sizings-min-max: (
 
 /*---- TYPOGRAPHY ----*/
 
+$colors: (
+	white: white,
+	black: black,
+);
+
 $text-aligns: (
 	left: left,
 	center: center,
@@ -205,6 +246,7 @@ $font-weights: (
 $letter-spacings: (
   \-0\.05: -0.05em,
   \-0\.025: -0.025em,
+  0: 0em,
   0\.025: 0.025em,
   0\.05: 0.05em,
 	0\.25: 0.25px,
