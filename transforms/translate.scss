@@ -1,0 +1,45 @@
+/*
+  TRANSLATE
+*/
+
+//@include associate3("translate-x", "transform", $translates);
+
+.translate-x-0 {
+  transform: translateX(0);
+}
+
+.translate-x-50 {
+  transform: translateX(50%);
+}
+
+.translate-x--50 {
+  transform: translateX(-50%);
+}
+
+.translate-x-100 {
+  transform: translateX(100%);
+}
+
+.translate-x--100 {
+  transform: translateX(-100%);
+}
+
+.translate-y-0 {
+  transform: translateY(0);
+}
+
+.translate-y-50 {
+  transform: translateY(50%);
+}
+
+.translate-y--50 {
+  transform: translateY(-50%);
+}
+
+.translate-y-100 {
+  transform: translateY(100%);
+}
+
+.translate-y--100 {
+  transform: translateY(-100%);
+}

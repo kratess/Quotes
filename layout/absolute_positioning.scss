@@ -1,0 +1,8 @@
+/*
+  TOP / RIGHT / BOTTOM / LEFT
+*/
+
+@include associate("top", "top", $absolute_positioning);
+@include associate("right", "right", $absolute_positioning);
+@include associate("bottom", "bottom", $absolute_positioning);
+@include associate("left", "left", $absolute_positioning);

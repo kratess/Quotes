@@ -1,4 +1,19 @@
 // Default
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 * {
   box-sizing: border-box;
@@ -132,6 +147,12 @@ $spacesXYs: (
 
 /*---- LAYOUT ----*/
 
+$absolute_positioning: (
+  0: 0,
+  50: 50%,
+  100: 100%
+);
+
 $container: (
   sm: '600px',
   md: '728px',
@@ -166,6 +187,16 @@ $positions: (
 
 @import "layout/_all";
 
+/*---- TRANSFORMS ----*/
+
+$translates: (
+	50: 50%,
+	100: 100%
+);
+
+
+@import "transforms/_all";
+
 /*---- SIZING ----*/
 
 $sizings: (
@@ -194,7 +225,7 @@ $sizings: (
 	75: 75%,
 	10\/12: 83.333%,
 	5\/6: 83.333%,
-	11\/12: 91.666%,
+	11\/12: 91.666%
 );
 
 $sizings-min-max: (
@@ -275,3 +306,12 @@ $text-transforms: (
 );
 
 @import "typography/_all";
+
+/*---- INTERACTIVITY ----*/
+
+$cursors: (
+  pointer: pointer,
+  not-allowed: not-allowed
+);
+
+@import "interactivity/_all";
