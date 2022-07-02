@@ -190,8 +190,9 @@ $positions: (
 /*---- TRANSFORMS ----*/
 
 $translates: (
+  0: 0,
 	50: 50%,
-	100: 100%
+	100: 100%,
 );
 
 
@@ -243,8 +244,8 @@ $sizings-min-max: (
 /*---- TYPOGRAPHY ----*/
 
 $colors: (
-	white: white,
-	black: black,
+	"white": white,
+	"black": black,
 );
 
 $text-aligns: (
@@ -306,6 +307,10 @@ $text-transforms: (
 );
 
 @import "typography/_all";
+
+/*---- TYPOGRAPHY ----*/
+
+@import "borders/_all";
 
 /*---- INTERACTIVITY ----*/
 

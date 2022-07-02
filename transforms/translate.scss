@@ -3,6 +3,9 @@
 */
 
 //@include associate3("translate-x", "transform", $translates);
+.translate {
+  transform: translate(-50%, -50%);
+}
 
 .translate-x-0 {
   transform: translateX(0);
@@ -43,3 +46,5 @@
 .translate-y--100 {
   transform: translateY(-100%);
 }
+
+//@include associate("translate-y", "transform", $translates);

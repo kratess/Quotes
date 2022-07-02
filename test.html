@@ -4,113 +4,11 @@
     <!-- <meta http-equiv="refresh" content="0.5"> -->
     <link rel="stylesheet" href="Quotes.css">
   </head>
-  <body class="bg-black">
-    <div class="container-sm d-flex justify-content-between" style="background-color: burlywood;">
-      <div>
-        <span>Ciao</span>
-      </div>
-
-      <div>
-        <span>Ciao</span>
-      </div>
-
-      <div>
-        <span>Ciao</span>
+  <body>
+    <div class="position-absolute top-50 left-50 translate">
+      <div class="p-32" style="background-color: red;">
+        <h1>Lorem ipsum</h1>
       </div>
     </div>
   </body>
 </html>
-
-<!--
-
-  @mixin min($bp, $max: "null", $device: "screen") {
-  @if $max == "null" {
-    @media only #{$device} and (min-width: #{$bp}) {
-      @content;
-    }
-  } @else {
-    @media only #{$device} and (min-width: #{$bp}) and (max-width: #{$max}) {
-      @content;
-    }
-  }
-}
-
-@function bp($bp) {
-  @return map-get($breakpoints, $bp);
-}
-
-$container-sizes: (
-  sm: map-get($breakpoints, sm) - 40px,
-  md: map-get($breakpoints, md) - 40px,
-  lg: map-get($breakpoints, lg) - 40px,
-  xl: map-get($breakpoints, xl) - 40px
-);
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
-
-@each $bp, $container-size in $container-sizes {
-  .container-#{$bp} {
-    @extend .container;
-  }
-}
-
-@each $bp, $container-size in $container-sizes {
-  @media (min-width: #{bp($bp)}) {
-    $i: index($container-sizes, $bp $container-size);
-
-    .container {
-      max-width: map-get($container-sizes, $bp);
-    }
-
-    .container-#{$bp} {
-      max-width: map-get($container-sizes, $bp);
-    }
-
-    @each $bp2, $container-size in $container-sizes {
-      $ii: index($container-sizes, $bp2 $container-size);
-
-      @if $ii <= $i {
-        .container-#{$bp2} {
-          max-width: map-get($container-sizes, $bp);
-        }
-      }
-    }
-  }
-}
-
-@each $bp, $container-size in $container-sizes {
-  $i: index($container-sizes, $bp $container-size);
-
-  @each $bp2, $container-size in $container-sizes {
-    $ii: index($container-sizes, $bp2 $container-size);
-
-    @if $ii <= $i {
-      .container-#{$bp} {
-        @extend .container-#{$bp2}
-      }
-    }
-  }
-}
-
-
-
-
-
-
-
-  @each $bp2, $container-size in $container-sizes {
-    $ii: index($container-sizes, $bp2 $container-size);
-
-    @if $ii > $i {
-      .container-#{$bp} {
-        @extend .container-#{$bp2}
-      }
-    }
-  }
-
-
-
--->

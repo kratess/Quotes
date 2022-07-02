@@ -1169,6 +1169,10 @@ a {
 /*
   TRANSLATE
 */
+.translate {
+  transform: translate(-50%, -50%);
+}
+
 .translate-x-0 {
   transform: translateX(0);
 }
@@ -1561,27 +1565,6 @@ a {
 }
 
 /*
-  TEXT DEFAULT
-*/
-h6, h5, h4, h3, h2, h1 {
-  margin: 0;
-  font-weight: inherit;
-}
-
-h1 {
-  font-size: 2.75rem;
-}
-
-h2 {
-  font-size: 1.375rem;
-}
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-/*
   FONT SIZE
 */
 .font-1 {
@@ -1741,6 +1724,43 @@ a {
 }
 
 /*
+  TEXT BREAK
+*/
+.break-normal {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.break-words {
+  overflow-wrap: break-word;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
+/*
+  TEXT DEFAULT
+*/
+h6, h5, h4, h3, h2, h1 {
+  margin: 0;
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 1.375rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
   TEXT TRANSFORM
 */
 .uppercase {
@@ -1757,6 +1777,25 @@ a {
 
 .normalcase {
   text-transform: none;
+}
+
+/*---- TYPOGRAPHY ----*/
+/*
+  BORDER RADIUS
+*/
+.radius-0 {
+  border-radius: 0;
+}
+
+.rounded {
+  border-radius: 9999px;
+}
+
+/*
+  BORDER
+*/
+.border-0 {
+  border: 0;
 }
 
 /*---- INTERACTIVITY ----*/
