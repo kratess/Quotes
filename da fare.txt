@@ -1,0 +1,4 @@
+fit-content
+font wight normal
+vertical (align per il text)
+margin x2 fino a 32 poi fino a 64 x4
